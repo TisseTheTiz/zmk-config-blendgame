@@ -1,0 +1,17 @@
+---
+ manifest:
+   remotes:
+     - name: zmkfirmware
+       url-base: https://github.com/zmkfirmware
+     - name: TisseTheTiz
+       url-base: https://github.com/TisseTheTiz
+   projects:
+     - name: zmk
+       import: app/west.yml
+     - name: config-headers
+       repo-path: zmk-config-headers
+       remote: TisseTheTiz
+       revision: main
+       path: config/headers
+   self:
+     path: config
